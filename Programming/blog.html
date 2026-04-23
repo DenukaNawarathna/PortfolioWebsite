@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Denuka. — Blog</title>
+<link rel="stylesheet" href="style2.css">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: system-ui, sans-serif;
+    background: #dbdbdb;
+    color: #111;
+  }
+
+  nav {
+    background: #fff;
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+  }
+
+  .logo { font-size: 20px; font-weight: 700; }
+  .logo span { color: #4d4d4f; }
+
+  .nav-links { display: flex; gap: 24px; list-style: none; }
+  .nav-links a { text-decoration: none; color: #555; font-size: 14px; }
+  .nav-links a.active { color: #7B2FFF; font-weight: 600; }
+
+  main { max-width: 960px; margin: 48px auto; padding: 0 24px; }
+
+  h1 { text-align: center; font-size: 36px; font-weight: 800; margin-bottom: 40px; }
+  h1 span { color: #7B2FFF; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    padding: 20px;
+  }
+
+  .card .source { font-size: 12px; color: #7B2FFF; margin-bottom: 8px; }
+  .card h2 { font-size: 14px; font-weight: 700; text-transform: uppercase; margin-bottom: 8px; }
+  .card p { font-size: 13px; color: #666; line-height: 1.6; margin-bottom: 14px; }
+  .card a { font-size: 13px; font-weight: 600; color: #7B2FFF; text-decoration: none; }
+  .card a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Denuka Nawarathna</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#" class="active">Blog</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+  <h1>MY <span>BLOGS</span></h1>
+
+  <div class="grid">
+    <div class="card">
+      <div class="source">Medium.com</div>
+      <h2>Clip addiction:Future of multimedia</h2>
+      <p>This article explains how clips are transforming the future of multimedia</p>
+      <a href="https://medium.com/@denuka00d/clip-addiction-future-of-multimedia-b978af28271e">Read More</a>
+    </div>
+
+</main>
+
+</body>
+</html>

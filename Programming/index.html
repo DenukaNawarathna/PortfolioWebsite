@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Font awesome cdn font icon css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-d"></i>
+                <div class="logo-text">Denuka Nawarathna</div>
+            </div>
+            <nav>
+                <div class="togglebtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="navlinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+                
+        </header>
+            <div class="container">
+            <div class="hero-pic">
+                <img src="main.jpg" alt="profile hero-pic">
+            </div>
+            <div class="hero-text">
+                <h5> Hi I`m <span class="input">Frontend Developer</span></h5>
+                <h1>Denuka Nawarathna</h1>
+                <p>lorem ipsum shdgdfdfhfhffh eiuyhdiughd hgduiydhd uyegduyghd
+                </p>
+                <div class="btn-group">
+                    <a href="#" class="btn active">Download CV</a>
+                    <a href="contact.html" class="btn">Contact</a>
+                </div>
+                <div class="social">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero section (always visible) -->
+    <section class="alpha">
+        <h1>About Me</h1>
+        <p>
+            Hi, I'm <span style="font-size:60px;font-weight:bold;">Denuka Nawarathna</span><br><br>
+            <span style="font-weight:bold;">Beginner Developer</span> | 
+            <span style="font-style:italic;">Creative Thinker</span> | 
+            <span style="text-decoration:underline;">Always Learning</span><br><br>
+            I'm currently exploring web development and building 
+            <strong>clean</strong>, <strong>simple</strong>, and <strong>meaningful</strong> digital experiences.<br><br>
+            <em>Every project is a step forward.</em><br><br>
+            <strong>Let's build something.</strong>
+        </p>
+    </section>
+
+    <!-- About section (hidden at first) -->
+    <section class="about-section" id="about">
+        <h2>About Me</h2>
+        <p>Hi! I'm Denuka. I love building websites with HTML, CSS and JavaScript.</p>
+    </section>
+
+    <!---typed js for typing text effect-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+        
+    <script>
+        /**Creating button click show hide navbar**/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click",function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+        var typed=new Typed(".input",{
+            strings:["Frontend Developer","Ux Designer","Web Developer"],
+            typeSpeed:70,
+            backSpeed:55,
+            loop:true
+           
+        })
+    </script>
+</body>
+</html>
